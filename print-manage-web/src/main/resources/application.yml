@@ -1,0 +1,38 @@
+server:
+  port: 8080
+#  servlet:
+#    session:
+#      cookie:
+#        http-only: true
+#        name: session_token
+spring:
+  profiles:
+#    active: dev
+  datasource:
+    name: devdb
+    url: jdbc:mysql://localhost:3306/police_work?useSSL=false&serverTimezone=GMT%2b8:00
+    username: root
+    password: 123456
+  jackson:
+    default-property-inclusion: non_null
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+
+  graphql:
+    servlet:
+      actuator-metrics: true
+  altair:
+    enabled: true
+    cdn:
+      enabled: false
+#  graphiql:
+#    enabled: true
+#    cdn:
+#      enabled: false
+  voyager:
+    enabled: true
+    cdn:
+      enabled: false

@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/work_time
+    username: root
+    password: Cyb.2012
+    name: devdb
