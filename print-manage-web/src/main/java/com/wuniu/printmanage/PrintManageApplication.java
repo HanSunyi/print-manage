@@ -1,20 +1,16 @@
 package com.wuniu.printmanage;
 
-import graphql.Scalars;
-import graphql.schema.GraphQLObjectType;
-import graphql.schema.GraphQLSchema;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 
 /**
  * @author Yan
  */
 @SpringBootApplication
-public class printManageApplication {
+public class PrintManageApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(printManageApplication.class, args);
+        SpringApplication.run(PrintManageApplication.class, args);
     }
     // @Bean
     // GraphQLSchema schema() {
